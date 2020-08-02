@@ -16,27 +16,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHOP BY CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JuT-sb-SzM">
-                                <rect key="frame" x="16" y="20" width="343" height="22"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="16" y="20" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7i0-k6-XnA">
-                                <rect key="frame" x="0.0" y="62" width="375" height="561"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7i0-k6-XnA">
+                                <rect key="frame" x="0.0" y="50.5" width="375" height="572.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="categoryCell" rowHeight="150" id="r8A-dM-bER" customClass="CategoryCell" customModule="Coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="categoryCell" rowHeight="160" id="r8A-dM-bER" customClass="CategoryCell" customModule="Coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r8A-dM-bER" id="rr5-uQ-hdH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="rtN-jm-JtC">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                                <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="rtN-jm-JtC">
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="154"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="154" id="z6M-Ln-kt8"/>
+                                                    </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03h-3m-akt">
-                                                    <rect key="frame" x="147" y="63" width="81" height="24"/>
+                                                    <rect key="frame" x="147" y="68" width="81" height="24"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -46,9 +49,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="rtN-jm-JtC" secondAttribute="trailing" id="9Ob-SE-0Vw"/>
                                                 <constraint firstItem="03h-3m-akt" firstAttribute="centerX" secondItem="rr5-uQ-hdH" secondAttribute="centerX" id="V3L-yT-Mmd"/>
                                                 <constraint firstItem="rtN-jm-JtC" firstAttribute="leading" secondItem="rr5-uQ-hdH" secondAttribute="leading" id="dXT-Ix-dc0"/>
-                                                <constraint firstAttribute="bottom" secondItem="rtN-jm-JtC" secondAttribute="bottom" id="qoE-EU-Rj0"/>
+                                                <constraint firstAttribute="bottom" secondItem="rtN-jm-JtC" secondAttribute="bottom" constant="3" id="qoE-EU-Rj0"/>
                                                 <constraint firstItem="03h-3m-akt" firstAttribute="centerY" secondItem="rr5-uQ-hdH" secondAttribute="centerY" id="ylw-bm-vbt"/>
-                                                <constraint firstItem="rtN-jm-JtC" firstAttribute="top" secondItem="rr5-uQ-hdH" secondAttribute="top" id="zXl-Rg-FSo"/>
+                                                <constraint firstItem="rtN-jm-JtC" firstAttribute="top" secondItem="rr5-uQ-hdH" secondAttribute="top" constant="3" id="zXl-Rg-FSo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -61,7 +64,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="7i0-k6-XnA" firstAttribute="top" secondItem="JuT-sb-SzM" secondAttribute="bottom" constant="20" id="2As-8z-uGf"/>
+                            <constraint firstItem="7i0-k6-XnA" firstAttribute="top" secondItem="JuT-sb-SzM" secondAttribute="bottom" constant="10" id="2As-8z-uGf"/>
                             <constraint firstItem="7i0-k6-XnA" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="42t-jV-GlG"/>
                             <constraint firstItem="JuT-sb-SzM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ofc-UJ-xTs"/>
                             <constraint firstItem="JuT-sb-SzM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UzU-Fq-blS"/>
@@ -72,6 +75,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="CATEGORIES" id="gJ3-3p-2Z5"/>
+                    <connections>
+                        <outlet property="categoriesTableView" destination="7i0-k6-XnA" id="NGr-ma-OzQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

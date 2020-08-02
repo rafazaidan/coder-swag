@@ -13,9 +13,11 @@ class CategoryCell: UITableViewCell {
     @IBOutlet weak var categoryTitle: UILabel!
     @IBOutlet weak var categoryImage: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    
+    // MARK: - Method for updating the views of the cell
+    func updateViews(_ category: Category) {
+        categoryTitle.text = category.title
+        categoryImage.image = UIImage(named: category.imageName)
     }
 
 }
