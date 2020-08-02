@@ -15,21 +15,22 @@ class ProductVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        productCollectionView.delegate = self
-        productCollectionView.dataSource = self
+        //productCollectionView.delegate = self
+        //productCollectionView.dataSource = self
     }
     
 
 
 }
 
-extension ProductVC: UICollectionViewDelegate, UICollectionViewDataSource {
+/*extension ProductVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        
     }
 }
+*/
