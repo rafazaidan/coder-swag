@@ -44,4 +44,24 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
         return CategoryCell()
     }
     
+    // MARK: - Passing along the data based on the cell selected by the user
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "productSegue", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Making sure that there is no text on the back button
+        let navigationBarButton = UIBarButtonItem()
+        navigationBarButton.title = ""
+        navigationItem.backBarButtonItem = navigationBarButton
+        
+        // Passing the data along based on the cell that is tapped
+        if let productVC = segue.destination as? ProductVC {
+            assert(sender as? Category != nil)
+            productVC.initProducts(category: sender as! Category)
+        }
+    }
 }
